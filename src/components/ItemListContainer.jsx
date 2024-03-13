@@ -1,3 +1,5 @@
 export const ItemListContainer = (props) => {
-  return <div>Hello {props.greeting}!</div>;
+  return (
+    <div className="text-orange text-center mt-20">Hello {props.greeting}!</div>
+  );
 };
