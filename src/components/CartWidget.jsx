@@ -1,4 +1,4 @@
-export const CartWidget = () => {
+export const CartWidget = ({ items }) => {
   return (
     <>
       <div className="flex justify-center relative bg-white rounded-2xl p-1 h-20">
@@ -11,7 +11,7 @@ export const CartWidget = () => {
         </div>
         <div className="flex flex-col justify-end align-middle text-center">
           <div className="flex flex-col align-middle p-3">
-            <span className="font-bold text-black text-lg">6</span>
+            <span className="font-bold text-black text-lg">{items}</span>
             <span className="flex text-black">Items</span>
           </div>
         </div>
